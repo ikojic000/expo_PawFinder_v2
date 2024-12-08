@@ -1,36 +1,84 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# Node and Expo directories
 node_modules/
-
-# Expo
 .expo/
 dist/
 web-build/
+npm-debug.*
+
+# Expo files
 expo-env.d.ts
 
-# Native
-*.orig.*
+# Sensitive files
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
+*.orig.*
 
-# Metro
-.metro-health-check*
-
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
+# macOS files
 .DS_Store
-*.pem
 
-# local env files
-.env*.local
+# JetBrains IDE files (WebStorm and other JetBrains products)
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/aws.xml
+.idea/**/contentModel.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/**/mongoSettings.xml
+.idea/replstate.xml
+.idea/sonarlint/
+.idea/httpRequests
+.idea/caches/build_file_checksums.ser
 
-# typescript
-*.tsbuildinfo
+# Specific JetBrains and WebStorm plugins
+.idea_modules/
+atlassian-ide-plugin.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# CMake
+cmake-build-*/
+
+# Gradle, Maven, and other IDE settings (optional, uncomment if using auto-import or specific plugins)
+# .idea/artifacts
+# .idea/compiler.xml
+# .idea/jarRepositories.xml
+# .idea/modules.xml
+# .idea/*.iml
+# *.iml
+# *.ipr
+
+# Output and temporary files
+out/
+
+# Code style and team-shared run configurations
+!.idea/codeStyles
+!.idea/runConfigurations
+
+/.idea/misc.xml
+/.idea/jsLinters/eslint.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/prettier.xml
+/.idea/codeStyles/Project.xml
+/.idea/vcs.xml
+/.idea/paw-finder.iml
+/.idea/modules.xml
+/.idea/codeStyles/codeStyleConfig.xml
+/%ProgramData%/Microsoft/Windows/UUS/State/_active.uusver
+/.idea/.gitignore
+
+# End of combined WebStorm and Expo .gitignore
